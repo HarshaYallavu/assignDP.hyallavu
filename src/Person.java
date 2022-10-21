@@ -1,6 +1,10 @@
+import java.util.ArrayList;
+
 public abstract class Person {
     private ProductMenu theProductMenu;
     public String personName;
+    public String personType;
+    public ArrayList<Product> userproductList=new ArrayList<>();
     public abstract void showMenu();
     public void showAddButton(){
       //Call the implementation to show the "add" buttons.

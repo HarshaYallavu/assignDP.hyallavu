@@ -24,6 +24,15 @@ public class ProductIterator implements ListIterator {
     public void Remove(){
        productList.remove(curr_index);
     }
+
+    public Product getproductType(String productName){
+        int i;
+        for( i=0;i<productList.size();i++){
+            if(productList.get(i).curr_productName.equals(productName))
+                break;
+        }
+        return productList.get(i);
+    }
     public void setproductList(ArrayList<Product> productList){
         this.productList=productList;
     }

@@ -5,6 +5,7 @@ public class Product {
         curr_productName=productName;
         this.productType=productType;
     }
+    Product(){}
     public void setProductName(String productName){
         this.curr_productName=productName;
     }

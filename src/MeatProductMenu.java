@@ -1,4 +1,10 @@
 public class MeatProductMenu implements ProductMenu{
+    Facade facade;
+    MeatProductMenu(){}
+    MeatProductMenu(Facade facade){
+        this.facade=facade;
+    }
+    //Implementation of Iterator Design Pattern.
     public void showMenu(){
         String str="Meat";
         ClassProductList theproductlist=new ClassProductList();
@@ -13,9 +19,11 @@ public class MeatProductMenu implements ProductMenu{
     }
     public void showAddButton(){
     //To show the add buttons.
+        facade.addTrading();
     }
     public void showViewButton(){
     //To show the view buttons.
+        facade.viewTrading();
     }
     public void showRadioButton(){
     //To show the radio buttons.
