@@ -14,6 +14,7 @@ Facade Design Pattern- It is used to as an interface for the systems features i.
       Bridge pattern is used here to load the menu based on UserType and ProductCategory.
       
   Factory Design Patter is implemented at:
+  
   1.AllProductmenu, which loads the menu based on the productCategory i.e. on the productcategory we are going to instantiate either
      MeatProductMenu or ProduceProdcutMenu.
      
@@ -24,5 +25,17 @@ Facade Design Pattern- It is used to as an interface for the systems features i.
   
   Visitor Design Pattern is implemented at:
   1. It is used for remind feature. It calls the reminderVisitor class to traverse the products and trading in the facade .
+  
+  Flow of the PTBS:
+  1. Prompts the user to choose a service between buyer and seller.
+  2. Ask to input the username and password for login.
+  3. If not logged in successfully, it re-prompts to choose the service between buyer and seller for login.
+  4. If logged in successfully, it shows 5 options i.e. AllProductMenu, PersonalCart, Remind, Logout,Exit.
+      4.1 AllProductMenu- shows all the products in the system based on Product Category.
+      4.2 Personal Cart- Shows the user intrested products and any sellers for it.
+          4.2.1 Has options AddTrading and view Trading
+      4.3 Remind- it shows the trading messages for the users
+      4.4 LogOut- user logs out of the system.
+      4.5 Exit- user exits the system.
   
   
